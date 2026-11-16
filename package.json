@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "node scripts/gerar-imagens.mjs && next build",
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint"
@@ -29,6 +29,7 @@
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4"
+    "eslint-config-next": "15.2.4",
+    "sharp": "^0.33.5"
   }
 }
